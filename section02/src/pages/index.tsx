@@ -15,6 +15,8 @@ export const getStaticProps = async () => {
       allBooks,
       recoBooks,
     },
+    // 몇 초 마다 다시 재생성할지
+    revalidate: 5,
   };
 };
 
