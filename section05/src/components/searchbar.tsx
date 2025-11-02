@@ -33,6 +33,7 @@ export default function Searchbar() {
 
   return (
     <div className={style.container}>
+      <div>{new Date().toLocaleString()}</div>
       <input value={search} onChange={onChangeSearch} onKeyDown={onKeyDown} />
       <button onClick={onSubmit}>검색</button>
     </div>
